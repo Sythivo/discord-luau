@@ -1,0 +1,9 @@
+name = "discordluau/emitter"
+description = "Event object implementation for luau"
+version = "0.0.1"
+
+[dependencies]
+std-polyfills = { workspace = "discordluau/std_polyfills", version = "*" }
+
+[target]
+environment = "lune"

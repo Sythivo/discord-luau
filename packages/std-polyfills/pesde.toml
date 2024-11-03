@@ -1,0 +1,6 @@
+name = "discordluau/std_polyfills"
+description = "This package provides polyfills for the standard library. When swapping Discord-Luau to a new Luau Runtime, you'll need to make sure that the standard library is polyfilled."
+version = "0.0.1"
+
+[target]
+environment = "lune"

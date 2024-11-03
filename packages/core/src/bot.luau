@@ -320,74 +320,70 @@ function Bot.Interface.new(options: {
 	token: string,
 	intents: number,
 })
-	local self = setmetatable(
-		{
-			state = state.new(options.token, options.intents, DISCORD_VERSION),
-			logger = logger.new("Bot"),
+	local self = setmetatable({
+		state = state.new(options.token, options.intents, DISCORD_VERSION),
+		logger = logger.new("Bot"),
 
-			onReady = emitter.new(),
-			onAllShardsReady = emitter.new(),
-			onMessage = emitter.new(),
-			onMessageChanged = emitter.new(),
-			onMessageDeleted = emitter.new(),
-			onMessageBulkDeleted = emitter.new(),
+		onReady = emitter.new(),
+		onAllShardsReady = emitter.new(),
+		onMessage = emitter.new(),
+		onMessageChanged = emitter.new(),
+		onMessageDeleted = emitter.new(),
+		onMessageBulkDeleted = emitter.new(),
 
-			onGroupDMChannelCreate = emitter.new(),
-			onCategoryChannelCreate = emitter.new(),
-			onAnnouncementChannelCreate = emitter.new(),
-			onDirectoryChannelCreate = emitter.new(),
-			onDMChannelCreate = emitter.new(),
-			onTextChannelCreate = emitter.new(),
-			onVoiceChannelCreate = emitter.new(),
-			onStageVoiceChannelCreate = emitter.new(),
+		onGroupDMChannelCreate = emitter.new(),
+		onCategoryChannelCreate = emitter.new(),
+		onAnnouncementChannelCreate = emitter.new(),
+		onDirectoryChannelCreate = emitter.new(),
+		onDMChannelCreate = emitter.new(),
+		onTextChannelCreate = emitter.new(),
+		onVoiceChannelCreate = emitter.new(),
+		onStageVoiceChannelCreate = emitter.new(),
 
-			onGroupDMChannelUpdated = emitter.new(),
-			onCategoryChannelUpdated = emitter.new(),
-			onAnnouncementChannelUpdated = emitter.new(),
-			onDirectoryChannelUpdated = emitter.new(),
-			onDMChannelUpdated = emitter.new(),
-			onTextChannelUpdated = emitter.new(),
-			onVoiceChannelUpdated = emitter.new(),
-			onStageVoiceChannelUpdated = emitter.new(),
+		onGroupDMChannelUpdated = emitter.new(),
+		onCategoryChannelUpdated = emitter.new(),
+		onAnnouncementChannelUpdated = emitter.new(),
+		onDirectoryChannelUpdated = emitter.new(),
+		onDMChannelUpdated = emitter.new(),
+		onTextChannelUpdated = emitter.new(),
+		onVoiceChannelUpdated = emitter.new(),
+		onStageVoiceChannelUpdated = emitter.new(),
 
-			onGroupDMChannelDeleted = emitter.new(),
-			onCategoryChannelDeleted = emitter.new(),
-			onAnnouncementChannelDeleted = emitter.new(),
-			onDirectoryChannelDeleted = emitter.new(),
-			onDMChannelDeleted = emitter.new(),
-			onTextChannelDeleted = emitter.new(),
-			onVoiceChannelDeleted = emitter.new(),
-			onStageVoiceChannelDeleted = emitter.new(),
+		onGroupDMChannelDeleted = emitter.new(),
+		onCategoryChannelDeleted = emitter.new(),
+		onAnnouncementChannelDeleted = emitter.new(),
+		onDirectoryChannelDeleted = emitter.new(),
+		onDMChannelDeleted = emitter.new(),
+		onTextChannelDeleted = emitter.new(),
+		onVoiceChannelDeleted = emitter.new(),
+		onStageVoiceChannelDeleted = emitter.new(),
 
-			onUserUpdated = emitter.new(),
-			onChannelPinsUpdate = emitter.new(),
+		onUserUpdated = emitter.new(),
+		onChannelPinsUpdate = emitter.new(),
 
-			onGuildCreate = emitter.new(),
-			onGuildUpdate = emitter.new(),
-			onGuildDelete = emitter.new(),
+		onGuildCreate = emitter.new(),
+		onGuildUpdate = emitter.new(),
+		onGuildDelete = emitter.new(),
 
-			onGuildMemberBanned = emitter.new(),
-			onGuildMemberUnbanned = emitter.new(),
+		onGuildMemberBanned = emitter.new(),
+		onGuildMemberUnbanned = emitter.new(),
 
-			onGuildMemberJoined = emitter.new(),
-			onGuildMemberLeft = emitter.new(),
-			onGuildMemberUpdated = emitter.new(),
+		onGuildMemberJoined = emitter.new(),
+		onGuildMemberLeft = emitter.new(),
+		onGuildMemberUpdated = emitter.new(),
 
-			onPingInteraction = emitter.new(),
-			onCommandInteraction = emitter.new(),
-			onComponentInteraction = emitter.new(),
-			onAutocompleteInteraction = emitter.new(),
-			onModalInteraction = emitter.new(),
-		} :: Bot,
-		{ __index = Bot.Prototype }
-	)
+		onPingInteraction = emitter.new(),
+		onCommandInteraction = emitter.new(),
+		onComponentInteraction = emitter.new(),
+		onAutocompleteInteraction = emitter.new(),
+		onModalInteraction = emitter.new(),
+	}, { __index = Bot.Prototype })
 
 	return self
 end
 
-export type Bot =
-	typeof(Bot.Prototype)
-	& {
+export type e =
+	{
 		state: state.State,
 		logger: logger.Logger,
 
@@ -461,5 +457,6 @@ export type Bot =
 		onAutocompleteInteraction: emitter.Emitter<autocompleteInteraction.Autocomplete>,
 		onModalInteraction: emitter.Emitter<modalInteraction.Modal>,
 	}
+export type Bot = typeof(setmetatable({} :: e, { __index = Bot.Prototype }))
 
 return Bot.Interface

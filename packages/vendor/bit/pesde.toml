@@ -1,0 +1,6 @@
+name = "discordluau/bit"
+description = "an API for 64 bit manipulation."
+version = "0.0.1"
+
+[target]
+environment = "lune"

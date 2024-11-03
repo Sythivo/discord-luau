@@ -1,0 +1,6 @@
+name = "discordluau/utils"
+description = "This packcage contains common utility modules and functions for DiscordLuau."
+version = "0.0.1"
+
+[target]
+environment = "lune"

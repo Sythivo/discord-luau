@@ -16,6 +16,8 @@ local discordBot = botObject.new({
 discordBot.onAllShardsReady:listen(function()
 	assert(discordBot.application, ``)
 
+	discordBot:abc()
+
 	-- local guild = discordBot:getGuildAsync("1273035219561091193"):expect("1")
 
 	-- for _, member in guild:listGuildMembersAsync(nil, 10):expect("2") do

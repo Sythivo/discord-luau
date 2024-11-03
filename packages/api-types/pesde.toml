@@ -1,0 +1,6 @@
+name = "discordluau/api_types"
+description = "This package contains luau types for every/all discord v10 APIs, allowing developers to type the HTTP, Websocket requests that they get from the discord API."
+version = "0.0.1"
+
+[target]
+environment = "lune"

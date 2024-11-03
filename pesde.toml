@@ -1,0 +1,26 @@
+name = "discordluau/discord_luau"
+version = "0.0.1"
+private = true
+
+workspace_members = [
+	"packages/api-types",
+	"packages/builders",
+	"packages/classes",
+	"packages/core",
+	"packages/extensions",
+	"packages/rest",
+	"packages/std-polyfills",
+	"packages/utils",
+	"packages/vendor/bit",
+	"packages/vendor/buffer",
+	"packages/vendor/emitter",
+	"packages/vendor/formdata",
+	"packages/vendor/future",
+	"packages/vendor/logger",
+	"packages/vendor/stream",
+	"packages/voice",
+	"packages/websocket"
+]
+
+[target]
+environment = "lune"

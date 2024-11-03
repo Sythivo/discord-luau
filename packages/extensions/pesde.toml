@@ -1,0 +1,6 @@
+name = "discordluau/extensions"
+description = "This package provides developers with a way to develop extensions for the Discord Luau Library. Extensions are a way to extend the functionality of the Discord Luau Library."
+version = "0.0.1"
+
+[target]
+environment = "lune"

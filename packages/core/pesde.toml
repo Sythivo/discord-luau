@@ -1,0 +1,6 @@
+name = "discordluau/core"
+description = "This package represents the core of the Discord Luau Library. Developers will be interacting with this package to create their own Discord Bot/Application."
+version = "0.0.1"
+
+[target]
+environment = "lune"

@@ -1,0 +1,6 @@
+name = "discordluau/builders"
+description = "This package is a collection of builders that can be used to create Objects that can be parsed by the Discord API."
+version = "0.0.1"
+
+[target]
+environment = "lune"

@@ -1,0 +1,6 @@
+name = "discordluau/future"
+description = "Immutable & asynchronous function handling impl in luau, with quirks"
+version = "0.0.1"
+
+[target]
+environment = "lune"

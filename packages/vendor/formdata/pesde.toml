@@ -1,0 +1,6 @@
+name = "discordluau/formdata"
+description = "Formdata implementation for luau"
+version = "0.0.1"
+
+[target]
+environment = "lune"

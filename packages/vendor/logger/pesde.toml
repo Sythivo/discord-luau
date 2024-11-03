@@ -1,0 +1,6 @@
+name = "discordluau/logger"
+description = "A logging utility for Discord Luau"
+version = "0.0.1"
+
+[target]
+environment = "lune"

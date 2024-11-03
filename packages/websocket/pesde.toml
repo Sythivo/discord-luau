@@ -1,0 +1,6 @@
+name = "discordluau/websocket"
+description = "This package is responsible for implementing a websocket client for DiscordLuau."
+version = "0.0.1"
+
+[target]
+environment = "lune"

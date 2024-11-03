@@ -1,0 +1,6 @@
+name = "discordluau/stream"
+description = "Enables developers to cautiously navigate a string"
+version = "0.0.1"
+
+[target]
+environment = "lune"

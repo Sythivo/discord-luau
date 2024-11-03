@@ -1,0 +1,6 @@
+name = "discordluau/rest"
+description = "This package provides developers with a way to interact with the Discord REST API."
+version = "0.0.1"
+
+[target]
+environment = "lune"

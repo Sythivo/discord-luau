@@ -1,0 +1,6 @@
+name = "discordluau/classeds"
+description = "This package provides developers with a set of classes that can be used to interact with the Discord API."
+version = "0.0.1"
+
+[target]
+environment = "lune"

@@ -1,0 +1,6 @@
+name = "discordluau/buffer"
+description = "enables you to write data, then flush said data at some point in the future."
+version = "0.0.1"
+
+[target]
+environment = "lune"
