@@ -4,6 +4,6 @@
 
 local Process = {}
 
-setmetatable(Process, { __index = require("@lune/process") })
+setmetatable(Process, { __index = if (zune) then zune.process else require("@lune/process") })
 
 return Process

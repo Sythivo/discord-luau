@@ -3,7 +3,8 @@
 ]=]
 
 local DateTime = {}
-local LuneDateTime = require("@lune/datetime")
+
+local LuneDateTime = if (zune) then zune.datetime else require("@lune/datetime")
 
 export type DateTime = LuneDateTime.DateTime
 

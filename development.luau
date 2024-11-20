@@ -4,7 +4,7 @@ local dateTime = require("@std-polyfills/datetime")
 local intentsBuilder = require("@builders/intents")
 local widgetSettings = require("@builders/guild/widgetSettings")
 
-local env = require(".env")
+local env = require("./.env")
 
 local PENGU_BOT_ID = "726819179054891149"
 local DISCORD_LUAU_SERVER = "1273035219561091193"
