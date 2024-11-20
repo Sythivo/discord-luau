@@ -58,7 +58,7 @@ local SelectionBuilder = require("@Builders/Interface/SelectionBuilder")
 local TextInputBuilder = require("@Builders/Interface/TextInputBuilder")
 
 -- Client
-local DiscordClient = require("Classes/DiscordClient")
+local DiscordClient = require("./Classes/DiscordClient")
 
 local DiscordLuau = {}
 

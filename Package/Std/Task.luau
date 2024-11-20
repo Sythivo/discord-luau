@@ -4,5 +4,5 @@
 ]]
 
 return setmetatable({}, {
-	__index = require("@lune/task"),
+	__index =  if (zune) then zune.task else require("@lune/task"),
 })

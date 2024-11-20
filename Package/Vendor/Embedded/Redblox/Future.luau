@@ -1,7 +1,7 @@
 --!nocheck
 --# selene: allow(shadowing)
 
-local Spawn = require("Spawn")
+local Spawn = require("./Spawn")
 
 local Task = require("../../../Std/Task")
 

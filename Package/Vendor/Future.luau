@@ -6,7 +6,7 @@
 	Original module can be found at: https://util.redblox.dev/future.html
 
 ]=]
-local Future = require("Embedded/Redblox/Future")
+local Future = require("./Embedded/Redblox/Future")
 
 export type Future<T> = Future.Future<T>
 

@@ -1,4 +1,4 @@
-local DiscordLuau = require("Package")
+local DiscordLuau = require("./Package")
 
 export type ActionRowBuilder = DiscordLuau.ActionRowBuilder
 export type ButtonBuilder = DiscordLuau.ButtonBuilder

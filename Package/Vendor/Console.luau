@@ -6,7 +6,7 @@
 	Original module can be found at: https://docs.asyncmatrix.dev/Packages/Console
 
 ]=]
-local Console = require("Embedded/4x8Matrix/Console")
+local Console = require("./Embedded/4x8Matrix/Console")
 
 export type Console = Console.Console
 

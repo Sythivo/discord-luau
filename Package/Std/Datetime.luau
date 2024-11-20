@@ -4,5 +4,5 @@
 ]]
 
 return setmetatable({}, {
-	__index = require("@lune/datetime"),
+	__index = if (zune) then zune.datetime else require("@lune/datetime"),
 })
